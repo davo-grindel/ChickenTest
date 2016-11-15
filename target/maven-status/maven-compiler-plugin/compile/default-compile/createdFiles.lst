@@ -1,0 +1,6 @@
+com\accenture\DAO\ChickenDAO.class
+com\accenture\service\ChickenServiceImpl.class
+com\accenture\controller\ChickenCrontroller.class
+com\accenture\service\ChickenService.class
+com\accenture\model\Chicken.class
+com\accenture\DAO\ChickenDAOImpl.class
