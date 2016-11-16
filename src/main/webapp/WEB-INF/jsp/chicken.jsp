@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">	
         <title>Farm Information</title>
         <!--<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">-->
-        <script src='<c:url value="/resources/js/jquery-3.1.1.min.js"/>'></script>
+        <script type="application/javascript" src='<c:url value="/resources/js/jquery-3.1.1.min.js"/>'></script>
+        <script type="application/javascript" src='<c:url value="/resources/js/script.js"/>'></script>
         <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
         <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
-        <script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
+        <script type="application/javascript" src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
     </head>
 
     <body>
@@ -29,12 +30,14 @@
                         <th width="60">Delete</th>
                     </tr>
                     <c:forEach items="${listChicken}" var="chicken">
-                        <tr>
+                        <tr id="edit">
                             <td>${chicken.id}</td>
                             <td>${chicken.name}</td>
                             <td>${chicken.num_egg}</td>
-                            <td><a href="<c:url value='/edit/${chicken.id}' />" >Edit</a></td>
-                            <td><a href="<c:url value='/remove/${chicken.id}' />" >Delete</a></td>
+                            <!--<td><a  href="<c:url value='/edit/${chicken.id}' />" >Edit</a></td>-->
+                            <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                            <td><button id="${chicken.id}" type="button" class="btn btn-danger btn-sm" onclick="deleteFunction(${chicken.id})">Delete</button></td>
+                            
                         </tr>
                     </c:forEach>
                 </table>
