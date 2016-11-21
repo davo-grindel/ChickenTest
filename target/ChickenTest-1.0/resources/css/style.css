@@ -7,36 +7,8 @@ and open the template in the editor.
     Created on : Nov 16, 2016, 11:50:09 AM
     Author     : david.andres.caamano
 */
-.tg  {
-    border-collapse:collapse;
-    border-spacing:0;
-    border-color:#ccc;
-}
-.tg td{
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    padding:10px 5px;
-    border-style:solid;
-    border-width:1px;
-    overflow:hidden;
-    word-break:normal;
-    border-color:#ccc;
-    color:#333;
-    background-color:#fff;
-}
-.tg th{
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    font-weight:normal;
-    padding:10px 5px;
-    border-style:solid;
-    border-width:1px;
-    overflow:hidden;
-    word-break:normal;
-    border-color:#ccc;
-    color:#333;
-    background-color:#f0f0f0;
-}
-.tg .tg-4eph{
-    background-color:#f9f9f9
+.table-hover thead tr:hover th, 
+.table-hover tbody tr:hover td {
+        background-color: #D1D119;
+        cursor: pointer;
 }
